@@ -5,7 +5,7 @@ author: Noah Cairns
 description: React Components and Seeing Design 
 ---
 
-Consider the simple calculator and what lessons we can learn from its design.
+## [Consider the Simple Calculator](https://nacairns1.github.io/calculator-react/)
 The first thing we see is the background, a simple diagonal repeating pattern. 
 Though not the focus of the page, the background passively draws the eye at first glance.
 Then the calculator animates with a smooth bounce from off screen to its final resting location in the center – full focus lies now on the calculator.

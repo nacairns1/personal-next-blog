@@ -8,17 +8,17 @@ export default function Post({ frontmatter, content }) {
 		frontmatter;
 
 	return (
-		<main className="flex flex-row">
-			<div className="flex flex-col w-96 prose h-full mx-10">
-				<section>
+		<main className="flex lg:flex-row flex-col">
+			<div className="flex flex-col lg:w-96 prose prose-sm lg:h-full justify-center items-center">
+				<section className="pt-20">
 					<h1>{title}</h1>
 				</section>
 				<section>
 					<h2>{description}</h2>
 				</section>
 			</div>
-            <div className="divider divider-horizontal"></div>
-			<div className="prose-lg px-20">
+            <div className="divider divider-vertical lg:divider-horizontal "></div>
+			<div className="prose px-20">
 				<div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
 			</div>
 		</main>

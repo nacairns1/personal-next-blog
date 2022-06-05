@@ -17,13 +17,10 @@ export default function Blog({ posts }) {
 
 					//JSX for individual blog listing
 					return (
-						<div className="w-1/3 " key={title}>
+						<div className="w-2/3 md:w-1/2 rounded-xl" key={title}>
 							<Link href={`/blog/${slug}`}>
-								<article className="artboard-horizontal prose btn-ghost bg-base-300 w-full p-10 btn h-56">
+								<article className="artboard-horizontal prose btn-ghost bg-base-300 w-full p-5 md:p-10 btn h-56">
 									<h1>{title}</h1>
-
-									<h3>{author}</h3>
-									<h3>{date}</h3>
 								</article>
 							</Link>
 							<div className="divider"></div>
