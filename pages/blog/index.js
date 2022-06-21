@@ -2,19 +2,18 @@ import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
 
-// The Blog Page Content
 export default function Blog({ posts }) {
 	return (
 		<main>
 			<div className="flex flex-col gap-5 w-5/6 mx-auto justify-center items-center">
 				{posts.map((post,idx) => {
-					//extract slug and frontmatter
+
 					const { slug, frontmatter } = post;
-					//extract frontmatter properties
+
 					const { title, author, category, date, bannerImage, tags, description } =
 						frontmatter;
 
-					//JSX for individual blog listing
+
 					return (
 						<div className="w-2/3 md:w-1/2 rounded-xl container flex flex-col " key={title}>
 							<Link href={`/blog/${slug}`}>

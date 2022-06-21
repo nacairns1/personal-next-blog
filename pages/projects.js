@@ -12,9 +12,8 @@ export default function Projects({ projects }) {
 						Public Projects
 					</h2>
 					{projects.sort((a,b) => a.frontmatter.sortOrder - b.frontmatter.sortOrder).map((project, idx) => {
-						//extract slug and frontmatter
 						const { slug, frontmatter, content } = project;
-						//extract frontmatter properties
+
 						const {
 							title,
 							author,
@@ -27,7 +26,6 @@ export default function Projects({ projects }) {
 							repo,
 						} = frontmatter;
 
-						//JSX for individual blog listing
 						return (
 							<div
 								className="w-full rounded-xl container flex flex-col items-center"
@@ -55,10 +53,9 @@ export default function Projects({ projects }) {
 }
 
 export async function getStaticProps() {
-	// get list of files from the projects folder
+
 	const files = fs.readdirSync("./public/projects/");
 
-	// get frontmatter & slug from each project
 	const projects = files.map((fileName) => {
 		const slug = fileName.replace(".md", "");
 		const readFile = fs.readFileSync(`./public/projects/${fileName}`, "utf-8");
@@ -71,7 +68,7 @@ export async function getStaticProps() {
 		};
 	});
 
-	// Return the pages static props
+
 	return {
 		props: {
 			projects
