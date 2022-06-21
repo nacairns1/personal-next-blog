@@ -2,10 +2,11 @@
 title: Consider the Calculator
 tags: ['react', 'nextjs']
 author: Noah Cairns
-description: React Components and Seeing Design 
+description: React Components and Seeing Design
+date:  02-20-2022
 ---
 
-## [Consider the Simple Calculator](https://nacairns1.github.io/calculator-react/)
+[Consider this Simple Calculator.](https://nacairns1.github.io/calculator-react/)
 The first thing we see is the background, a simple diagonal repeating pattern. 
 Though not the focus of the page, the background passively draws the eye at first glance.
 Then the calculator animates with a smooth bounce from off screen to its final resting location in the center – full focus lies now on the calculator.
@@ -17,8 +18,7 @@ These buttons clear the calculator, give the square root of the current value, a
 These red buttons’ operations are innately different from the rest of the operator grid and the number grid. Each other button on the screen 
 stores a value behind the scenes. These blue buttons either continue an inputted number or store an operator with which we later calculate a new value 
 using the operator and a stored value. The red buttons clear these values, display a final value, and finally each red button allows for a new calculation
-to begin. The user spends no time thinking about what to do. They get it: input a number, input an operator, get an answer. Silent, simple design goes far
-. Further, elegant design can be used to mask an inelegant codebase. 
+to begin. The user spends no time thinking about what to do. They get it - input a number, input an operator, and then receive an answer. Silent, simple design goes far. Further, elegant design can be used to mask an inelegant codebase. 
 
 My codebase for this project in its current iteration certainly reads like (spoiler alert) someone just taught themselves React with the help of some amazing
 YouTube videos.  Monolithic calculator class, weak asynchronous/promise structure, intermediate understanding of the event loop, CSS that would make a 
@@ -40,7 +40,7 @@ collaborator cry repeating values – you name it, the project’s got it. Check
 
 
 Notice the missing values from 99999999 to .00001? No? Well, those actually get a whole other ugly special logic tree to decide how many decimal places to slice.
-This frankly hideous code serves an elegant visual design purpose: normalize the user’s output. Ultimately, most users don’t particularly care about the data
+This frankly hideous code serves an elegant visual design purpose - normalize the user’s output. Ultimately, most users don’t particularly care about the data
 structures, or data storage, or buffering inputs, concatenating strings which represent numbers, or how long a number is before you change it to exponential, 
 etc. What people care about is simple: 
 

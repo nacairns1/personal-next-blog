@@ -1,6 +1,5 @@
 import fs from "fs";
 import matter from "gray-matter";
-import Image from "next/image";
 import Link from "next/link";
 
 // The Blog Page Content
@@ -8,22 +7,23 @@ export default function Blog({ posts }) {
 	return (
 		<main>
 			<div className="flex flex-col gap-5 w-5/6 mx-auto justify-center items-center">
-				{posts.map((post) => {
+				{posts.map((post,idx) => {
 					//extract slug and frontmatter
 					const { slug, frontmatter } = post;
 					//extract frontmatter properties
-					const { title, author, category, date, bannerImage, tags } =
+					const { title, author, category, date, bannerImage, tags, description } =
 						frontmatter;
 
 					//JSX for individual blog listing
 					return (
-						<div className="w-2/3 md:w-1/2 rounded-xl" key={title}>
+						<div className="w-2/3 md:w-1/2 rounded-xl container flex flex-col " key={title}>
 							<Link href={`/blog/${slug}`}>
-								<article className="artboard-horizontal prose btn-ghost bg-base-300 w-full p-5 md:p-10 btn h-56">
-									<h1>{title}</h1>
+								<article className="artboard artboard-horizontal prose prose-lg btn-ghost bg-base-300 w-full p-5 md:p-10 btn h-56 ">
+									<h2 className="font-extrabold text-3xl">{title}</h2>
+									<h4 className="font-light text-xl italic">{description}</h4>
 								</article>
 							</Link>
-							<div className="divider"></div>
+							{idx !== posts.length -1 && <div className="divider" />}
 						</div>
 					);
 				})}

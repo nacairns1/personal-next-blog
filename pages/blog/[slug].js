@@ -4,21 +4,20 @@ import md from "markdown-it";
 
 // The page for each post
 export default function Post({ frontmatter, content }) {
-	const { title, author, category, date, bannerImage, tags, description } =
+	const { title, author, category, date, bannerImage, tags, description, } =
 		frontmatter;
 
 	return (
-		<main className="flex lg:flex-row flex-col">
-			<div className="flex flex-col lg:w-96 prose prose-sm lg:h-full justify-center items-center">
+		<main className="flex flex-col bg-base-300 w-3/4 items-center my-10 mx-auto">
+			<div className="flex flex-col prose prose-sm md:prose-base lg:prose-xl justify-center items-center">
 				<section className="pt-20">
 					<h1>{title}</h1>
 				</section>
-				<section>
+				<section className="italic font-thin">
 					<h2>{description}</h2>
-				</section>
+				</section> 
 			</div>
-            <div className="divider divider-vertical lg:divider-horizontal "></div>
-			<div className="prose px-20">
+			<div className="prose prose-sm md:prose-xl prose-blue">
 				<div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
 			</div>
 		</main>
