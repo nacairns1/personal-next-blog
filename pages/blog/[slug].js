@@ -8,8 +8,8 @@ export default function Post({ frontmatter, content }) {
 		frontmatter;
 
 	return (
-		<main className="flex flex-col sm:bg-base-300 w-full sm:w-3/4 items-center my-10 mx-auto">
-			<div className="flex flex-col prose prose-sm md:prose-base lg:prose-xl justify-center mt-4 items-center text-left px-6">
+		<main className="flex flex-col sm:bg-base-200 w-full sm:w-3/4 items-center my-10 mx-auto">
+			<div className="flex flex-col prose prose-sm md:prose-base lg:prose-xl justify-center mt-4 sm:pt-20 items-center text-left px-6">
 				<section className="">
 					<h1>{title}</h1>
 				</section>
