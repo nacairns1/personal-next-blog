@@ -18,7 +18,7 @@ export default function ResumeModal(props) {
 		>
 			<div className="fixed inset-0 bg-base-100/70"></div>
 			<div className="fixed inset-0 flex items-center justify-center p-4">
-				<Dialog.Panel className="w-3/4 flex-col flex items-center justify-center gap-2 relative">
+				<Dialog.Panel className="w-full sm:w-3/4 flex-col flex items-center justify-center gap-2 relative">
 					<button
 						className="btn  btn-sm btn-warning place-self-end"
 						onClick={() => {
