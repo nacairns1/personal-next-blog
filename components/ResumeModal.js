@@ -14,7 +14,7 @@ export default function ResumeModal(props) {
 			onClose={() => {
 				props.closeHandler();
 			}}
-			className="relative z-50 flex flex-col items-center justify-center"
+			className="relative z-[2000] flex flex-col items-center justify-center"
 		>
 			<div className="fixed inset-0 bg-base-100/70"></div>
 			<div className="fixed inset-0 flex items-center justify-center p-4">
