@@ -1,1 +1,1 @@
-# Portfolio and Blog Site made with NextJS and markdown 
+# Portfolio and Blog Site made with NextJS, Markdown, TailwindCSS, and DaisyUI

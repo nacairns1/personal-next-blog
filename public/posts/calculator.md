@@ -2,12 +2,12 @@
 title: Consider the Calculator
 tags: ['react', 'nextjs']
 author: Noah Cairns
-description: React Components and Seeing Design
-date:  02-20-2022
+description: React Components and Understanding Design Intentions
+date:  '2022-02-20'
 ---
 
-[Consider this Simple Calculator.](https://nacairns1.github.io/calculator-react/)
-The first thing we see is the background, a simple diagonal repeating pattern. 
+[Consider this simple calculator.](https://nacairns1.github.io/calculator-react/)
+The first thing seen is the background, a simple, eyecatching diagonal repeating pattern. 
 Though not the focus of the page, the background passively draws the eye at first glance.
 Then the calculator animates with a smooth bounce from off screen to its final resting location in the center – full focus lies now on the calculator.
 An ellipsis shows on the screen, imploring the user to input a value. Next, the user sees two grids: An operator grid and a number grid.

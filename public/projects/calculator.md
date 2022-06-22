@@ -7,4 +7,4 @@ link: https://nacairns1.github.io/calculator-react/
 sortOrder: 4
 description: Custom Calculator
 ---
-Inspired by the predictions system on Twitch, a client requested a Discord Bot which can automatically track user engagement and create _predictions_ in the server. 
+Fully functional calculator coded in React and vanilla CSS. Bootstrapped using `create-react-app` and deployed to GitHub Pages. While mostly an educational project for myself to learn the ropes of product design and state management with React, please feel free to use this as your daily calculator. 

@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className=" min-h-screen min-w-full relative pb-12 pt-20">
+    <div className=" min-h-screen min-w-full relative pt-20 pb-20">
       <Header />
       {children}
       <Footer />

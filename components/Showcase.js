@@ -11,7 +11,7 @@ const ttzDescription =
 export default function Showcase(props) {
 	return (
 		<div>
-			<div className="w-full justify-center flex flex-col items-center md:flex-row gap-10 md:gap-20 pt-6 pb-12">
+			<div className="w-full justify-center flex  md:flex-wrap flex-col items-center md:flex-row gap-10 md:gap-20 pt-6 pb-12">
 				<Card
 					src="/Calculator.png"
 					title="React Calculator"

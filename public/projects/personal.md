@@ -3,12 +3,11 @@ title: Personal Website
 tags:
 - javascript
 - typescript
-- discord.js
 author: Noah Cairns
 bannerImage: '/blog-screenshot.png'
-repo: 
-link: 
+repo: https://github.com/nacairns1/personal-next-blog
+link: '/'
 sortOrder: 2
 description: Portfolio Website and Self-Hosted Blog
 ---
-Inspired by the predictions system on Twitch, a client requested a Discord Bot which can automatically track user engagement and create _predictions_ in the server. 
+Custom built Next.js website for displaying personal talents and blog posts. The frontend was coded with Next.js, TailwindCSS, and DaisyUI. The content is managed via a Git based custom headless Content Management Service where the posts are written in Markdown and then parsed into HTML. If you enjoy how it looks, feel free to fork the repository and make it your own. Deployed via Netlify. 

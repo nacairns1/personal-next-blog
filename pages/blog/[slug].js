@@ -1,22 +1,24 @@
 import fs from "fs";
 import matter from "gray-matter";
 import md from "markdown-it";
+import * as dayjs from "dayjs";
 
 export default function Post({ frontmatter, content }) {
 	const { title, author, category, date, bannerImage, tags, description, } =
 		frontmatter;
 
 	return (
-		<main className="flex flex-col bg-base-300 w-3/4 items-center my-10 mx-auto">
-			<div className="flex flex-col prose prose-sm md:prose-base lg:prose-xl justify-center items-center">
-				<section className="pt-20">
+		<main className="flex flex-col sm:bg-base-300 w-full sm:w-3/4 items-center my-10 mx-auto">
+			<div className="flex flex-col prose prose-sm md:prose-base lg:prose-xl justify-center mt-4 items-center text-left px-6">
+				<section className="">
 					<h1>{title}</h1>
 				</section>
-				<section className="italic font-thin">
+				<section className="italic font-thin flex flex-col">
 					<h2>{description}</h2>
+					<h4>{dayjs(date).format("D MMMM YYYY")}</h4>
 				</section> 
 			</div>
-			<div className="prose prose-sm md:prose-xl prose-blue">
+			<div className="prose prose-sm md:prose-xl prose-blue w-full px-6 text-left">
 				<div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
 			</div>
 		</main>

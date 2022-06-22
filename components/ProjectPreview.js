@@ -3,14 +3,14 @@ import md from "markdown-it";
 
 export default function ProjectPreview(props) {
 	return (
-		<div className="flex flex-grow gap-10 mx-5">
-			<div className="card w-80 h-80 bg-base-100 rounded-md">
+		<div className="flex flex-col md:flex-row flex-grow gap-10 mx-5">
+			<div className="card w-80 h-80 min-h-fit bg-base-100 rounded-md">
 				<Image src={props.src} alt={props.alt} layout="fill" />
 			</div>
-			<div className="flex flex-col flex-grow h-80 relative w-fit">
+			<div className="flex flex-col relative w-fit">
 				<h2 className="card-title">{props.title}</h2>
 				<p className="italic mb-2">{props.description}</p>
-                <div dangerouslySetInnerHTML={{ __html: md().render(props.content) }} />
+                <div className="prose prose-blue mb-[4rem]" dangerouslySetInnerHTML={{ __html: md().render(props.content) }} />
 				<div className="absolute bottom-0">
 					<a href={props.repo} target={"_blank"}>
 						<button className="btn btn-primary">

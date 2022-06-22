@@ -8,7 +8,7 @@ export default function Projects({ projects }) {
 		<div className="w-full h-full">
 			<main>
 				<div className="flex flex-col gap-5 w-5/6 mx-auto justify-center items-center">
-					<h2 className=" text-3xl font-light italic mb-5 place-self-start mx-5">
+				<h2 className=" text-3xl font-light italic mb-5 place-self-start mx-5">
 						Public Projects
 					</h2>
 					{projects.sort((a,b) => a.frontmatter.sortOrder - b.frontmatter.sortOrder).map((project, idx) => {
