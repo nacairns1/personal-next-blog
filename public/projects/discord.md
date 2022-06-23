@@ -5,7 +5,7 @@ tags:
 - typescript
 - discord.js
 author: Noah Cairns
-bannerImage: '/prediction_start.png'
+bannerImage: './prediction_start.png'
 repo: https://github.com/nacairns1/discord-engage-bot
 link: https://github.com/nacairns1/discord-engage-bot
 sortOrder: 3

@@ -4,7 +4,7 @@ tags:
 - javascript
 - typescript
 author: Noah Cairns
-bannerImage: '/ttz-screenshot.png'
+bannerImage: './ttz-screenshot.png'
 repo: 'https://github.com/nacairns1/tic-tac-zachy'
 link: 'https://tic-tac-zachy.vercel.app/'
 sortOrder: 1

@@ -4,7 +4,7 @@ tags:
 - javascript
 - typescript
 author: Noah Cairns
-bannerImage: '/blog-screenshot.png'
+bannerImage: './blog-screenshot.png'
 repo: https://github.com/nacairns1/personal-next-blog
 link: '/'
 sortOrder: 2

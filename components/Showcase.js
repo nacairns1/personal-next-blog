@@ -13,21 +13,21 @@ export default function Showcase(props) {
 		<div>
 			<div className="w-full justify-center flex  md:flex-wrap flex-col items-center md:flex-row gap-10 md:gap-20 pt-6 pb-12">
 				<Card
-					src="/Calculator.png"
+					src="./Calculator.png"
 					title="React Calculator"
 					description={reactCalculatorDescription}
 					link="https://nacairns1.github.io/calculator-react/"
 				></Card>
 
 				<Card
-					src="/prediction_start.png"
+					src="./prediction_start.png"
 					title="Discord Prediction Bot"
 					description={discordBotDescription}
 					link="https://github.com/nacairns1/discord-engage-bot"
 				></Card>
 
 				<Card
-					src="/ttz-screenshot.png"
+					src="./ttz-screenshot.png"
 					title="Tic-Tac-Zachy"
 					description={ttzDescription}
 					link="https://tic-tac-zachy.vercel.app/"
