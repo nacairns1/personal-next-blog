@@ -7,7 +7,7 @@ export default function About() {
 		<div className="flex flex-col md:flex-row justify-center items-center gap-10 h-full m-2">
 			<div className="avatar">
 				<div className=" w-48 md:w-96 md:h-96 rounded-full md:rounded md:place-self-start">
-					<img src={"./noah_pic.jpg"} alt="Noah Cairns Picture" />
+					<img src={"/noah_pic.jpg"} alt="Noah Cairns Picture" />
 				</div>
 			</div>
 

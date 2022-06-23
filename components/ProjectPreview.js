@@ -5,7 +5,7 @@ export default function ProjectPreview(props) {
 	return (
 		<div className="flex flex-col md:flex-row flex-grow gap-10 mx-5">
 			<div className="card w-80 h-80 min-h-fit bg-base-100 rounded-md">
-				<Image src={props.src} alt={props.alt} layout="fill" />
+				<img src={props.src} alt={props.alt} layout="fill" />
 			</div>
 			<div className="flex flex-col relative w-fit">
 				<h2 className="card-title">{props.title}</h2>
