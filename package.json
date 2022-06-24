@@ -16,7 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@headlessui/react": "^1.6.5",
     "@heroicons/react": "^1.0.6",
-    "@netlify/plugin-nextjs": "^4.9.2",
+    "@netlify/plugin-nextjs": "^4.9.3",
     "@tailwindcss/typography": "^0.5.2",
     "daisyui": "^2.15.2",
     "dayjs": "^1.11.3",
@@ -26,7 +26,8 @@
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "react-pdf": "^5.7.2"
+    "react-pdf": "^5.7.2",
+    "sharp": "^0.30.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
